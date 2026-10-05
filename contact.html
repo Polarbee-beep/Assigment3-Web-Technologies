@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Commission | BlockCrafters</title>
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-purple-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-purple-light fw-bold" href="index.html">🔮 BlockCrafters</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services & Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact/Order</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 max-width-form">
+        <header class="text-center mb-4">
+            <h1 class="fw-bold text-purple-dark-heading">Commission Request Form</h1>
+            <p class="text-muted">Fill out the details below to request a direct quote for your custom build project.</p>
+        </header>
+
+        <section class="card shadow p-4 card-purple-border">
+            <form action="#" method="POST">
+                <div class="mb-3">
+                    <label for="userName" class="form-label fw-semibold">Your Name / Minecraft Username</label>
+                    <input type="text" class="form-control form-input-purple" id="userName" placeholder="e.g. Notch" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="userEmail" class="form-label fw-semibold">Email Address</label>
+                    <input type="email" class="form-control form-input-purple" id="userEmail" placeholder="name@example.com" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="discordTag" class="form-label fw-semibold">Discord Username</label>
+                    <input type="text" class="form-control form-input-purple" id="discordTag" placeholder="e.g. steve_builds" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="buildTier" class="form-label fw-semibold">Select Build Tier</label>
+                    <select class="form-select form-input-purple" id="buildTier" required>
+                        <option value="" selected disabled>Choose a package...</option>
+                        <option value="standard">Standard Spawn ($49)</option>
+                        <option value="advanced">Advanced Hub ($129)</option>
+                        <option value="mega">Mega World Map ($299+)</option>
+                        <option value="custom">Completely Custom Project</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="projectDetails" class="form-label fw-semibold">Project Details & Theme Descriptions</label>
+                    <textarea class="form-control form-input-purple" id="projectDetails" rows="4" placeholder="Describe the style, block palette, references, and deadline expectations..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-purple w-100 fw-bold py-2 shadow-sm">Submit Build Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-purple-dark text-white text-center py-4 mt-auto">
+        <p class="mb-0">&copy; 2026 BlockCrafters Studio. All rights reserved.</p>
+    </footer>
+    <script src="https://jsdelivr.net"></script>
+</body>
+</html>
